@@ -1,2 +1,2 @@
-gobuster dir -u https://com-cept.com/ -w /home/kali/Downloads/directory-list-2.3-medium.txt -x .php,.html,.txt,.asp,.htm -t 50
+gobuster dir -u https://com-cept.com/ -w /home/kali/Downloads/directory-list-2.3-medium.txt -x .php,.db,.html,.txt,.asp,.htm -t 50
 wpscan --url https://com-cept.com/ --api-token API-TOKEN --enumerate u,vp,vt
