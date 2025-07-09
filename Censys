@@ -1,0 +1,1 @@
+((host.services.endpoints.http.html_title:"WordPress" and host.services.endpoints.http.body:"wp-content") or (web.endpoints.http.html_title:"WordPress" and web.endpoints.http.body:"wp-content")) and host.location.country = "India"
