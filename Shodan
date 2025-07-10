@@ -1,6 +1,6 @@
 https://cvedb.shodan.io/dashboard
 screenshot.label:login country:RK
-https://cvedb.shodan.io/cve/CVE-2024-23897    // CVE
+https://cvedb.shodan.io/cve/CVE-2024-23897    // CVE this will give cpe. then seach that CPE
 cpe:2.3:o:microsoft:windows_10_1507:10.0.10240.18453 country:UH
 http.html:Apache country:pp
 
