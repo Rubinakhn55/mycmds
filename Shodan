@@ -7,9 +7,8 @@ http.html:Apache country:pp
 =============Shodan CLI==========
 sudo pip3 install python3-shodan
 shodan init API-KEY
-shodan download wp_file 'http.html:"wp-content" country:TT'
-shodan parse --fields ip_str,host FILE_NAME
-shodan parse --fields ip_str,port,hostnames  wp_file.json.gz
+shodan download <FILE_NAME> 'http.html:"wp-content" country:TT'     # filter inside ''
+shodan parse --fields ip_str,port,hostnames  <FILE_NAME>           # <FILE_NAME>   wp_file.json.gz
 shodan parse --fields ip_str,port,hostnames -f vulns:"CVE" wp_file.json.gz > Vulnerable_Web_Wordpress.txt      # -f: for filter
 shodan convert WP_IP.json.gz csv
 
