@@ -12,3 +12,10 @@ shodan parse --fields ip_str,host FILE_NAME
 shodan parse --fields ip_str,port,hostnames  wp_file.json.gz
 shodan parse --fields ip_str,port,hostnames --separator , -f wp_file.json.gz -O WP_IP
 shodan convert WP_IP.json.gz csv
+
+
+============Parameters==========
+
+data,hostnames,ip,ip_str,ipv6,org,isp,location.country_code,location.city,location.country_name,location.latitude,
+location.longitude,os,asn,port,tags,timestamp,transport,product,version,vulns,ssl.cipher.version,
+ssl.cipher.bits,ssl.cipher.name,ssl.alpn,ssl.versions,ssl.cert.serial,ssl.cert.fingerprint.sha1,ssl.cert.fingerprint.sha256,html,title
