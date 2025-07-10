@@ -10,3 +10,5 @@ shodan init API-KEY
 shodan download wp_file 'http.html:"wp-content" country:TT'
 shodan parse --fields ip_str,host FILE_NAME
 shodan parse --fields ip_str,port,hostnames  wp_file.json.gz
+shodan parse --fields ip_str,port,hostnames --separator , -f wp_file.json.gz -O WP_IP
+shodan convert WP_IP.json.gz csv
