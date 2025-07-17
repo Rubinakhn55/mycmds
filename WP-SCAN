@@ -1,4 +1,4 @@
-
+wpscan --url https://example.com --api-token API-TOKEN --enumerate u,vp,vt
 
 =========Create sh to run multiple bruteforces=======
 #!/bin/bash
